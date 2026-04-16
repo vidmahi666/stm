@@ -1,0 +1,240 @@
+
+<h2 class="sr-only">Full data visualization infographic: From paper shopping to e-commerce — evolution, statistics, pie charts, usage patterns from 1990 to 2026.</h2>
+
+<style>
+  .inf-section { margin-bottom: 2rem; }
+  .inf-label { font-size: 12px; color: var(--color-text-secondary); font-weight: 500; letter-spacing: 0.04em; text-transform: uppercase; margin-bottom: 0.5rem; }
+  .inf-title { font-size: 18px; font-weight: 500; color: var(--color-text-primary); margin: 0 0 1rem; }
+  .stat-row { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 1.5rem; }
+  .stat-card { background: var(--color-background-secondary); border-radius: var(--border-radius-md); padding: 0.75rem 1rem; flex: 1; min-width: 110px; }
+  .stat-val { font-size: 22px; font-weight: 500; color: var(--color-text-primary); }
+  .stat-lbl { font-size: 11px; color: var(--color-text-secondary); margin-top: 2px; }
+  .legend-row { display: flex; flex-wrap: wrap; gap: 14px; margin-bottom: 8px; font-size: 12px; color: var(--color-text-secondary); }
+  .leg-dot { width: 10px; height: 10px; border-radius: 2px; display: inline-block; margin-right: 4px; vertical-align: middle; }
+  .era-timeline { display: flex; gap: 0; margin-bottom: 1.5rem; overflow: hidden; border-radius: var(--border-radius-md); }
+  .era-block { flex: 1; padding: 10px 8px; text-align: center; }
+  .era-year { font-size: 11px; font-weight: 500; }
+  .era-tag { font-size: 10px; margin-top: 3px; opacity: 0.85; }
+  .two-col { display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1fr); gap: 16px; }
+  .chart-wrap { position: relative; width: 100%; }
+  .divider { border: none; border-top: 0.5px solid var(--color-border-tertiary); margin: 1.5rem 0; }
+  .badge { display: inline-block; font-size: 11px; padding: 2px 8px; border-radius: 10px; font-weight: 500; }
+  .insight-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px,1fr)); gap: 10px; margin-bottom: 1rem; }
+  .insight-card { border: 0.5px solid var(--color-border-tertiary); border-radius: var(--border-radius-md); padding: 0.75rem; background: var(--color-background-primary); }
+  .insight-icon { font-size: 16px; margin-bottom: 4px; }
+  .insight-val { font-size: 18px; font-weight: 500; color: var(--color-text-primary); }
+  .insight-desc { font-size: 11px; color: var(--color-text-secondary); margin-top: 2px; }
+</style>
+
+<div style="padding: 1rem 0;">
+
+  <p style="font-size: 13px; color: var(--color-text-secondary); margin: 0 0 0.25rem; text-transform: uppercase; letter-spacing: 0.05em; font-weight: 500;">Data infographic</p>
+  <p style="font-size: 22px; font-weight: 500; color: var(--color-text-primary); margin: 0 0 0.3rem;">From paper shopping to e-commerce</p>
+  <p style="font-size: 13px; color: var(--color-text-secondary); margin: 0 0 1.5rem;">Evolution, statistics & usage patterns · 1990–2026</p>
+
+  <div class="era-timeline">
+    <div class="era-block" style="background:#D3D1C7;"><div class="era-year" style="color:#2C2C2A;">1990s</div><div class="era-tag" style="color:#444441;">Paper catalogs</div></div>
+    <div class="era-block" style="background:#B5D4F4;"><div class="era-year" style="color:#042C53;">Late 1990s</div><div class="era-tag" style="color:#0C447C;">Web 1.0 stores</div></div>
+    <div class="era-block" style="background:#85B7EB;"><div class="era-year" style="color:#042C53;">2000s</div><div class="era-tag" style="color:#0C447C;">Marketplaces rise</div></div>
+    <div class="era-block" style="background:#378ADD;"><div class="era-year" style="color:#E6F1FB;">2010s</div><div class="era-tag" style="color:#B5D4F4;">Mobile commerce</div></div>
+    <div class="era-block" style="background:#185FA5;"><div class="era-year" style="color:#E6F1FB;">2020s</div><div class="era-tag" style="color:#B5D4F4;">Social + AI era</div></div>
+  </div>
+
+  <div class="stat-row">
+    <div class="stat-card"><div class="stat-val">$6.88T</div><div class="stat-lbl">Global e-commerce sales 2026</div></div>
+    <div class="stat-card"><div class="stat-val">2.86B</div><div class="stat-lbl">Online shoppers worldwide</div></div>
+    <div class="stat-card"><div class="stat-val">21.1%</div><div class="stat-lbl">Share of total retail sales</div></div>
+    <div class="stat-card"><div class="stat-val">59%</div><div class="stat-lbl">Sales via mobile devices</div></div>
+  </div>
+
+  <hr class="divider">
+
+  <p class="inf-title">Global e-commerce sales growth (2015–2026)</p>
+  <div class="legend-row">
+    <span><span class="leg-dot" style="background:#185FA5;"></span>Sales ($ trillion)</span>
+    <span><span class="leg-dot" style="background:#1D9E75; border-style: dashed; border-width:1px;"></span>% of total retail</span>
+  </div>
+  <div class="chart-wrap" style="height:220px;">
+    <canvas id="salesChart" role="img" aria-label="Bar and line chart of e-commerce sales from 2015 to 2026 growing from 1.5 trillion to 6.88 trillion">Sales grew from $1.5T in 2015 to $6.88T in 2026. Retail share rose from 7.4% to 21.1%.</canvas>
+  </div>
+
+  <hr class="divider">
+
+  <div class="two-col">
+    <div>
+      <p class="inf-title" style="font-size:15px;">Shopping channel mix (2026)</p>
+      <div class="legend-row" style="font-size:11px;">
+        <span><span class="leg-dot" style="background:#185FA5;"></span>Mobile 59%</span>
+        <span><span class="leg-dot" style="background:#1D9E75;"></span>Desktop 28%</span>
+        <span><span class="leg-dot" style="background:#BA7517;"></span>Social 8%</span>
+        <span><span class="leg-dot" style="background:#888780;"></span>Other 5%</span>
+      </div>
+      <div class="chart-wrap" style="height:200px;">
+        <canvas id="channelPie" role="img" aria-label="Pie chart of shopping channel mix: Mobile 59%, Desktop 28%, Social commerce 8%, Other 5%">Mobile 59%, Desktop 28%, Social 8%, Other 5%.</canvas>
+      </div>
+    </div>
+    <div>
+      <p class="inf-title" style="font-size:15px;">Top product categories (2026)</p>
+      <div class="legend-row" style="font-size:11px;">
+        <span><span class="leg-dot" style="background:#534AB7;"></span>Fashion 23%</span>
+        <span><span class="leg-dot" style="background:#185FA5;"></span>Electronics 21%</span>
+        <span><span class="leg-dot" style="background:#1D9E75;"></span>Grocery 18%</span>
+        <span><span class="leg-dot" style="background:#D85A30;"></span>Beauty 13%</span>
+        <span><span class="leg-dot" style="background:#BA7517;"></span>Home 12%</span>
+        <span><span class="leg-dot" style="background:#888780;"></span>Other 13%</span>
+      </div>
+      <div class="chart-wrap" style="height:200px;">
+        <canvas id="catPie" role="img" aria-label="Pie chart of top product categories: Fashion 23%, Electronics 21%, Grocery 18%, Beauty 13%, Home 12%, Other 13%">Fashion 23%, Electronics 21%, Grocery 18%, Beauty 13%, Home 12%, Other 13%.</canvas>
+      </div>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <p class="inf-title">Regional e-commerce share of global market (2026)</p>
+  <div class="legend-row">
+    <span><span class="leg-dot" style="background:#185FA5;"></span>Asia-Pacific 45%</span>
+    <span><span class="leg-dot" style="background:#1D9E75;"></span>North America 25%</span>
+    <span><span class="leg-dot" style="background:#534AB7;"></span>W. Europe 18%</span>
+    <span><span class="leg-dot" style="background:#BA7517;"></span>Latin America 7%</span>
+    <span><span class="leg-dot" style="background:#888780;"></span>Rest 5%</span>
+  </div>
+  <div class="chart-wrap" style="height:200px;">
+    <canvas id="regionPie" role="img" aria-label="Doughnut chart of regional share: Asia-Pacific 45%, North America 25%, Western Europe 18%, Latin America 7%, Rest 5%">Asia-Pacific 45%, North America 25%, Western Europe 18%, Latin America 7%, Rest 5%.</canvas>
+  </div>
+
+  <hr class="divider">
+
+  <p class="inf-title">Payment methods used online (2024–2026)</p>
+  <div class="chart-wrap" style="height:220px;">
+    <canvas id="payChart" role="img" aria-label="Horizontal bar chart of payment methods: Digital wallets 53%, Cards 29%, BNPL 5%, Bank transfer 8%, Other 5%">Digital wallets 53%, Cards 29%, BNPL 5%, Bank transfer 8%, Other 5%.</canvas>
+  </div>
+
+  <hr class="divider">
+
+  <p class="inf-title">How people shop today</p>
+  <div class="insight-grid">
+    <div class="insight-card">
+      <div class="insight-val" style="color:#185FA5;">1.65B</div>
+      <div class="insight-desc">smartphone shoppers in 2026</div>
+    </div>
+    <div class="insight-card">
+      <div class="insight-val" style="color:#1D9E75;">$1.63T</div>
+      <div class="insight-desc">social commerce sales 2026</div>
+    </div>
+    <div class="insight-card">
+      <div class="insight-val" style="color:#534AB7;">70%</div>
+      <div class="insight-desc">US shoppers prefer apps over mobile web</div>
+    </div>
+    <div class="insight-card">
+      <div class="insight-val" style="color:#BA7517;">58%</div>
+      <div class="insight-desc">bought due to influencer recommendation</div>
+    </div>
+    <div class="insight-card">
+      <div class="insight-val" style="color:#D85A30;">14.1%</div>
+      <div class="insight-desc">India CAGR — fastest growing market</div>
+    </div>
+    <div class="insight-card">
+      <div class="insight-val" style="color:#0F6E56;">$9.9B</div>
+      <div class="insight-desc">AI in e-commerce market size 2026</div>
+    </div>
+  </div>
+
+  <div style="padding: 0.75rem 1rem; background: var(--color-background-secondary); border-radius: var(--border-radius-md); margin-top: 0.5rem;">
+    <p style="font-size: 12px; color: var(--color-text-secondary); margin: 0;">Sources: Shopify, Capital One Shopping, Flowlu, Charle Agency · Data as of 2026</p>
+  </div>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<script>
+const gridColor = 'rgba(128,128,128,0.12)';
+const tickColor = '#888';
+
+new Chart(document.getElementById('salesChart'), {
+  type: 'bar',
+  data: {
+    labels: ['2015','2016','2017','2018','2019','2020','2021','2022','2023','2024','2025','2026'],
+    datasets: [
+      {
+        type: 'bar',
+        label: 'Sales ($T)',
+        data: [1.55, 1.85, 2.30, 2.86, 3.35, 4.28, 4.93, 5.29, 5.78, 6.00, 6.42, 6.88],
+        backgroundColor: '#185FA5',
+        yAxisID: 'y',
+        order: 2
+      },
+      {
+        type: 'line',
+        label: '% of retail',
+        data: [7.4, 8.6, 10.2, 11.9, 13.6, 17.8, 18.8, 19.0, 19.4, 20.1, 20.5, 21.1],
+        borderColor: '#1D9E75',
+        backgroundColor: 'rgba(29,158,117,0)',
+        borderWidth: 2,
+        borderDash: [5,4],
+        pointRadius: 3,
+        yAxisID: 'y2',
+        order: 1
+      }
+    ]
+  },
+  options: {
+    responsive: true, maintainAspectRatio: false,
+    plugins: { legend: { display: false } },
+    scales: {
+      y: { position: 'left', ticks: { callback: v => '$'+v+'T', font:{size:11}, color: tickColor }, grid: { color: gridColor } },
+      y2: { position: 'right', ticks: { callback: v => v+'%', font:{size:11}, color: tickColor }, grid: { display: false } },
+      x: { ticks: { font:{size:11}, color: tickColor, autoSkip: false, maxRotation: 45 }, grid: { display: false } }
+    }
+  }
+});
+
+new Chart(document.getElementById('channelPie'), {
+  type: 'doughnut',
+  data: {
+    labels: ['Mobile','Desktop','Social commerce','Other'],
+    datasets: [{ data: [59,28,8,5], backgroundColor: ['#185FA5','#1D9E75','#BA7517','#888780'], borderWidth: 2, borderColor: 'transparent' }]
+  },
+  options: { responsive:true, maintainAspectRatio:false, plugins:{ legend:{display:false} }, cutout:'60%' }
+});
+
+new Chart(document.getElementById('catPie'), {
+  type: 'doughnut',
+  data: {
+    labels: ['Fashion','Electronics','Grocery','Beauty','Home & Living','Other'],
+    datasets: [{ data: [23,21,18,13,12,13], backgroundColor: ['#534AB7','#185FA5','#1D9E75','#D85A30','#BA7517','#888780'], borderWidth: 2, borderColor: 'transparent' }]
+  },
+  options: { responsive:true, maintainAspectRatio:false, plugins:{ legend:{display:false} }, cutout:'60%' }
+});
+
+new Chart(document.getElementById('regionPie'), {
+  type: 'doughnut',
+  data: {
+    labels: ['Asia-Pacific','North America','Western Europe','Latin America','Rest of world'],
+    datasets: [{ data: [45,25,18,7,5], backgroundColor: ['#185FA5','#1D9E75','#534AB7','#BA7517','#888780'], borderWidth: 2, borderColor: 'transparent' }]
+  },
+  options: { responsive:true, maintainAspectRatio:false, plugins:{ legend:{display:false} }, cutout:'55%' }
+});
+
+new Chart(document.getElementById('payChart'), {
+  type: 'bar',
+  data: {
+    labels: ['Digital wallets','Credit / debit cards','Bank transfer','Buy now pay later','Other'],
+    datasets: [{
+      data: [53,29,8,5,5],
+      backgroundColor: ['#185FA5','#1D9E75','#534AB7','#D85A30','#888780'],
+      borderRadius: 4,
+      borderSkipped: false
+    }]
+  },
+  options: {
+    indexAxis: 'y',
+    responsive:true, maintainAspectRatio:false,
+    plugins:{ legend:{display:false} },
+    scales:{
+      x:{ ticks:{ callback: v=>v+'%', font:{size:11}, color:tickColor }, grid:{ color:gridColor }, max:60 },
+      y:{ ticks:{ font:{size:11}, color:tickColor }, grid:{display:false} }
+    }
+  }
+});
+</script>
